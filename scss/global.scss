@@ -1,0 +1,125 @@
+/* -------- GLOBAL -------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: $colorBlack;
+}
+
+*,
+*::after,
+*::before {
+    transition: $quickTransition;
+}
+
+.container {
+    max-width: calc($conteinerWidth + 4 * $containerPadding);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 calc(2 * $containerPadding);
+
+}
+
+
+html,
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow-x: clip;
+    scroll-behavior: smooth;
+    
+    font-family: $fontPrimary;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+main {
+    
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+}
+
+.lock {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.btn {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .9em 1.1em;
+    border-radius: 6px;
+    background: $colorPrimary;
+    color: $colorWhite;
+
+    &:hover {
+        background: darken($color: $colorPrimary, $amount: 5);
+    }
+}
+
+.input {
+    background: $colorWhite;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: .9em 1.1em;
+
+    &:hover {
+        background: #dfdfdf;
+    }
+}
+
+.section {
+
+    $sectionPadding: clamp(60px, 12vw, 120px);
+    padding-top: $sectionPadding;
+    padding-bottom: $sectionPadding;
+
+    // .section__header
+    &__header {
+        font-size: clamp(18px, 2.5vw, 24px);;
+        margin-bottom: 2.667em;
+    }
+
+    // .section__title
+    &__title {
+        margin: 0 auto .375em;
+        text-align: center;
+        max-width: 720px;
+    }
+
+    // .section__subtitle
+    &__subtitle {
+        margin: 0 auto .86em;
+        text-align: center;
+        max-width: 720px;
+        color: $colorPrimary;
+    }
+
+    // .section__text
+    &__text {
+        margin: 0 auto 2.667em;
+        text-align: center;
+        max-width: 720px;
+        color: $colorBlack07;
+    }
+}
+

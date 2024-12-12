@@ -1,0 +1,81 @@
+.hero {
+
+    padding: clamp(50px, 20vw, 170px) 0;
+    background: url(../img/hero.png) center center / cover no-repeat;
+
+    // .hero__container
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        @media screen and (max-width: $breakpoint992) {
+            flex-direction: column;
+            align-items: unset;
+            gap: clamp(20px, 6vw, 60px);
+        }
+    }
+
+    // .hero__text
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 445px;
+
+        @media screen and (max-width: $breakpoint992) {
+            max-width: unset;
+        }
+    }
+
+    // .hero__title
+    &__title {
+        color: $colorWhite;
+    }
+
+    // .hero__subtitle
+    &__subtitle {
+        color: $colorWhite08;
+    }
+
+    // .hero__form
+    &__form {
+        flex: 0 1 445px;
+    }
+}
+
+.hero-form {
+
+    background: $colorWhite;
+    border-radius: clamp(8px, 2vw, 16px);
+    padding: clamp(10px, 4vw, 40px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    // .hero-form__title
+    &__title {
+        
+    }
+
+    // .hero-form__inputs
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    // .hero-form__btn
+    &__btn {
+        margin-top: 4px;
+    }
+
+    // .hero-form__caption
+    &__caption {
+        text-align: center;
+        color: $colorBlack04;
+    }
+}
+

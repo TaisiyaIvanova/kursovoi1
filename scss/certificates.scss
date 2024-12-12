@@ -1,0 +1,32 @@
+
+.certificates {
+
+    background: #F7F8FA;
+
+    // .certificates__inner
+    &__inner {
+        display: flex;
+        $certificatesGap: clamp(10px, 3vw, 30px);
+        gap: $certificatesGap;
+        
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        scrollbar-width: nones;
+
+        & > * {
+            flex: 0 0 255px;
+            scroll-snap-align: start;
+        }
+    }
+}
+
+.certificate {
+    img {
+        width: 100%;
+        display: block;
+    }
+}

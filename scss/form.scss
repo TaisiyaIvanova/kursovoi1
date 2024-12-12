@@ -1,0 +1,57 @@
+$formWidth: 540px;
+
+.form-section {
+    
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/form_bg.jpeg) center center / cover no-repeat;
+
+
+    &.section {
+
+
+        .section__title{
+            color: $colorWhite;
+            max-width: $formWidth;
+        }
+    
+        .section__text {
+            color: $colorWhite08;
+            max-width: $formWidth;
+        }
+    }
+    
+
+}
+
+.form {
+
+    max-width: $formWidth;
+    width: 100%;
+
+    // .form__inputs
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    // .form__btn
+    &__btn {
+        margin-top: 16px;
+    }
+
+    // .form__caption
+    &__caption {
+        margin-top: 24px;
+    
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        color: $colorWhite07;
+
+        a {
+            color: $colorWhite;
+        }
+    }
+}
+

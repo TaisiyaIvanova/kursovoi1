@@ -1,0 +1,130 @@
+.reviews {
+
+    position: relative;
+
+    // .reviews__slider
+    &__slider {
+    }
+
+    // .reviews__pagination
+    &__pagination {
+        position: relative;
+        z-index: 2;
+
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        top: unset !important;
+        bottom: unset !important;
+
+        margin-top: clamp(32px, 6.4vw, 64px);
+
+        .swiper-pagination-bullet {
+            width: 24px;
+            height: 4px;
+            border-radius: 2px;
+            background: rgba($color: #000000, $alpha: .1);
+            margin: 0 !important;
+            opacity: 1 !important;
+
+            &.swiper-pagination-bullet-active {
+                background: $colorPrimary;
+            }
+        }
+    }
+
+    // .reviews__buttons
+    &__buttons {
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+
+        @media screen and (max-width: $breakpoint992) {
+            display: none;
+        }
+    }
+
+    // .reviews__button
+    &__button {
+        position: absolute;
+        pointer-events: all;
+        top: 50%;
+        translate: 0 -50%;
+
+        width: 64px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: $colorWhite;
+        box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            width: 62.5%;
+            height: auto;
+        }
+
+
+        // .reviews__button_prev
+        &_prev {
+            left: 20px;
+        }
+
+        // .reviews__button_next
+        &_next {
+            right: 20px;
+        }
+    }
+}
+
+.review {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    max-width: 730px;
+    margin: 0 auto;
+
+    // .review__img
+    &__img {
+        width: 64px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid rgba($color: #000000, $alpha: .1);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // .review__text
+    &__text {
+        text-align: center;
+    }
+
+    // .review__author
+    &__author {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &-title {
+            margin-top: 4px;
+            font-size: 13px;
+            line-height: 1.23;
+            color: $colorBlack04;
+
+        }
+    }
+}

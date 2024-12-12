@@ -1,0 +1,38 @@
+// Container
+$conteinerWidth: 1110 + px;
+$containerPadding: 10 + px;
+
+// Breakpoints
+$breakpoint1440: 1439.98 + px;
+$breakpoint1400: 1399.98 + px;
+$breakpoint1200: 1199.98 + px;
+$breakpoint1024: 1023.98 + px;
+$breakpoint992: 991.98 + px;
+$breakpoint768: 767.98 + px;
+$breakpoint576: 575.98 + px;
+$breakpoint480: 479.98 + px;
+$breakpoint375: 374.98 + px;
+
+// Colors
+$colorWhite: #FFFFFF;
+$colorBlack: #000000;
+$colorPrimary: #FF002E;
+$colorWhite08: rgba(255, 255, 255, 0.8);
+$colorWhite07: rgba(255, 255, 255, 0.7);
+$colorBlack08: rgba(0, 0, 0, 0.8);
+$colorBlack07: rgba(0, 0, 0, 0.7);
+$colorBlack06: rgba(0, 0, 0, 0.6);
+$colorBlack04: rgba(0, 0, 0, 0.4);
+
+// Fonts
+$fontPrimary: "Stem";
+
+// Layers
+$headerLayer: 9;
+$popupLayer: 10;
+
+// Burger
+$burgerBreakpoint: $breakpoint1024;
+
+// Transitions
+$quickTransition: all 120ms ease-out;
