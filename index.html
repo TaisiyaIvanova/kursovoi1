@@ -1,0 +1,354 @@
+    <!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap&_v=20241112163600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js?_v=20241112163600"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20241112163600"></script>
+    <title>Главная</title>
+</head>
+    <body>
+        <header class="header container">
+            <a href="#" class="header__logo">
+            <img src="img/logo.png" alt="">
+            </a>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li>
+                    <a href="D:\2 курс\ооп\dist\404.html" class="header__link">О компании</a>
+                </li>
+                <li>
+                    <a href="" class="header__link">Новости</a>
+                </li>
+                <li>
+                    <a href="" class="header__link">Помощь</a>
+                </li>
+                <li>
+                    <a href="" class="header__link">Отзывы</a>
+                </li>
+                <li>
+                    <a href="" class="header__link">Контакты</a>
+                </li>
+                <li class="header__contact">
+                    Звонок бесплатный
+                    <a href="mailto:+74951234567" class="header__link">+7 495 123-45-67</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__burger">
+        <span></span>
+        </div>
+        </header>
+        <script>
+            $(".header__burger").click(function() {
+                $(this).toggleClass("header__burger_active")
+                $(".header__nav").toggleClass("header__nav_active")
+            })
+        </script>
+        <main>            
+            <section class="hero">
+                <div class="hero__container container">
+                <div class="hero__text">
+                    <h1 class="hero__title h1">Курсы английского языка</h1>
+                    <p class="hero__subtitle title-3">Станьте сильнее и увереннее всего за 7 дней прохождения курса онлайн</p>
+                </div>
+            <form action="" class="hero__form hero-form">
+                <h2 class="hero-form__title body-1">Запишись на первый бесплатный урок прямо сейчас</h2>
+                <div class="hero-form__inputs">
+                    <input class="input body-1" type="text" placeholder="Ваше имя" required>
+                    <input class="input body-1" type="tel" placeholder="Ваш телефон" required>
+                    <input class="input body-1" type="email" placeholder="Электронная почта" required>
+                    <button class="hero-form__btn btn body-1">Оставить заявку</button>
+                </div>
+                <p class="hero-form__caption body-2">+ Скидка 20% на покупку любого курса</p>
+            </form>
+                </div>
+            </section>
+            <section class="section container">
+                <h2 class="section__title h1">Наши курсы</h2>
+                    <p class="section__text title-3">
+                Мы подготовили для вас интересные обучающие программы от лучших преподавателей
+                    </p>
+                <div class="courses-cards">
+                    <a href="#" class="courses-card">
+                        <img src="img/courses/1.jpeg" alt="Английский для взрослых" class="courses-card__img">
+                        <h3 class="courses-card__title title-2">Английский для взрослых</h3>
+                    </a>
+                    <a href="#" class="courses-card">
+                        <img src="img/courses/2.jpeg" alt="Английский для детей" class="courses-card__img">
+                        <h3 class="courses-card__title title-2">Английский для детей</h3>
+                    </a>
+                        <a href="#" class="courses-card">
+                        <img src="img/courses/3.jpeg" alt="Бизнес английский" class="courses-card__img">
+                        <h3 class="courses-card__title title-2">Бизнес английский</h3>
+                    </a>
+                        <a href="#" class="courses-card">
+                        <img src="img/courses/4.jpeg" alt="Английский для туризма" class="courses-card__img">
+                        <h3 class="courses-card__title title-2">Английский для туризма</h3>
+                    </a>
+                    <a href="#" class="courses-card">
+                        <img src="img/courses/5.jpeg" alt="Подготовка к экзаменам" class="courses-card__img">
+                        <h3 class="courses-card__title title-2">Подготовка к экзаменам</h3>
+                    </a>
+                    <a href="#" class="courses-card">
+                        <img src="img/courses/6.jpeg" alt="Профильный английский" class="courses-card__img">
+                        <h3 class="courses-card__title title-2">Профильный английский</h3>
+                    </a>
+                </div>
+            </section>
+            <section class="section benefits">
+                <div class="benefits__inner container">
+                    <div class="benefit">
+                        <div class="benefit__icon">
+                            <svg width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.9946 27.9144L8.45198 30L28.0438 2.48663L24.7401 0L4.9946 27.9144ZM0.5 8.14171C0.5 12.3128 3.68848 15.2406 7.87575 15.2406C12.063 15.2406 15.2131 12.3128 15.2131 8.14171C15.2131 3.93048 12.063 1.00268 7.87575 1.00268C3.68848 1.00268 0.5 3.93048 0.5 8.14171ZM4.84094 8.14171C4.84094 6.17647 6.2623 4.89305 7.87575 4.89305C9.4892 4.89305 10.8721 6.17647 10.8721 8.14171C10.8721 10.1471 9.52761 11.4305 7.87575 11.4305C6.30072 11.4305 4.84094 10.1471 4.84094 8.14171ZM17.7869 22.2193C17.7869 26.3904 20.9754 29.3583 25.1627 29.3583C29.3115 29.3583 32.5 26.3904 32.5 22.2193C32.5 18.008 29.3115 15.1203 25.1627 15.1203C20.9754 15.1203 17.7869 18.008 17.7869 22.2193ZM22.1278 22.2193C22.1278 20.2139 23.5492 18.9305 25.1627 18.9305C26.7377 18.9305 28.1591 20.2139 28.1591 22.2193C28.1591 24.1845 26.7761 25.4679 25.1627 25.4679C23.5876 25.4679 22.1278 24.1845 22.1278 22.2193Z" fill="#FE002D"/>
+                            </svg>                    
+                        </div>
+                        <div class="benefit__number title-2">5+</div>
+                        <h3 class="benefit__title body-1">Работаем более 5 лет</h3>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit__icon">
+                            <svg width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.9946 27.9144L8.45198 30L28.0438 2.48663L24.7401 0L4.9946 27.9144ZM0.5 8.14171C0.5 12.3128 3.68848 15.2406 7.87575 15.2406C12.063 15.2406 15.2131 12.3128 15.2131 8.14171C15.2131 3.93048 12.063 1.00268 7.87575 1.00268C3.68848 1.00268 0.5 3.93048 0.5 8.14171ZM4.84094 8.14171C4.84094 6.17647 6.2623 4.89305 7.87575 4.89305C9.4892 4.89305 10.8721 6.17647 10.8721 8.14171C10.8721 10.1471 9.52761 11.4305 7.87575 11.4305C6.30072 11.4305 4.84094 10.1471 4.84094 8.14171ZM17.7869 22.2193C17.7869 26.3904 20.9754 29.3583 25.1627 29.3583C29.3115 29.3583 32.5 26.3904 32.5 22.2193C32.5 18.008 29.3115 15.1203 25.1627 15.1203C20.9754 15.1203 17.7869 18.008 17.7869 22.2193ZM22.1278 22.2193C22.1278 20.2139 23.5492 18.9305 25.1627 18.9305C26.7377 18.9305 28.1591 20.2139 28.1591 22.2193C28.1591 24.1845 26.7761 25.4679 25.1627 25.4679C23.5876 25.4679 22.1278 24.1845 22.1278 22.2193Z" fill="#FE002D"/>
+                            </svg>                    
+                        </div>
+                        <div class="benefit__number title-2">400+</div>
+                        <h3 class="benefit__title body-1">Постоянные ученики 400+ человек</h3>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit__icon">
+                            <svg width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.9946 27.9144L8.45198 30L28.0438 2.48663L24.7401 0L4.9946 27.9144ZM0.5 8.14171C0.5 12.3128 3.68848 15.2406 7.87575 15.2406C12.063 15.2406 15.2131 12.3128 15.2131 8.14171C15.2131 3.93048 12.063 1.00268 7.87575 1.00268C3.68848 1.00268 0.5 3.93048 0.5 8.14171ZM4.84094 8.14171C4.84094 6.17647 6.2623 4.89305 7.87575 4.89305C9.4892 4.89305 10.8721 6.17647 10.8721 8.14171C10.8721 10.1471 9.52761 11.4305 7.87575 11.4305C6.30072 11.4305 4.84094 10.1471 4.84094 8.14171ZM17.7869 22.2193C17.7869 26.3904 20.9754 29.3583 25.1627 29.3583C29.3115 29.3583 32.5 26.3904 32.5 22.2193C32.5 18.008 29.3115 15.1203 25.1627 15.1203C20.9754 15.1203 17.7869 18.008 17.7869 22.2193ZM22.1278 22.2193C22.1278 20.2139 23.5492 18.9305 25.1627 18.9305C26.7377 18.9305 28.1591 20.2139 28.1591 22.2193C28.1591 24.1845 26.7761 25.4679 25.1627 25.4679C23.5876 25.4679 22.1278 24.1845 22.1278 22.2193Z" fill="#FE002D"/>
+                            </svg>                    
+                        </div>
+                        <div class="benefit__number title-2">2500+</div>
+                        <h3 class="benefit__title body-1">Не менее 2500 уроков <br>в месяц</h3>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit__icon">
+                            <svg width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.9946 27.9144L8.45198 30L28.0438 2.48663L24.7401 0L4.9946 27.9144ZM0.5 8.14171C0.5 12.3128 3.68848 15.2406 7.87575 15.2406C12.063 15.2406 15.2131 12.3128 15.2131 8.14171C15.2131 3.93048 12.063 1.00268 7.87575 1.00268C3.68848 1.00268 0.5 3.93048 0.5 8.14171ZM4.84094 8.14171C4.84094 6.17647 6.2623 4.89305 7.87575 4.89305C9.4892 4.89305 10.8721 6.17647 10.8721 8.14171C10.8721 10.1471 9.52761 11.4305 7.87575 11.4305C6.30072 11.4305 4.84094 10.1471 4.84094 8.14171ZM17.7869 22.2193C17.7869 26.3904 20.9754 29.3583 25.1627 29.3583C29.3115 29.3583 32.5 26.3904 32.5 22.2193C32.5 18.008 29.3115 15.1203 25.1627 15.1203C20.9754 15.1203 17.7869 18.008 17.7869 22.2193ZM22.1278 22.2193C22.1278 20.2139 23.5492 18.9305 25.1627 18.9305C26.7377 18.9305 28.1591 20.2139 28.1591 22.2193C28.1591 24.1845 26.7761 25.4679 25.1627 25.4679C23.5876 25.4679 22.1278 24.1845 22.1278 22.2193Z" fill="#FE002D"/>
+                            </svg>                    
+                        </div>
+                        <div class="benefit__number title-2">90%</div>
+                        <h3 class="benefit__title body-1">После пробного урока 90% учеников остаются с нами</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="section container">
+                <h3 class="section__subtitle title-2">Команда</h3>
+                <h2 class="section__title h1">Наши учителя</h2>
+                <p class="section__text title-3">
+                    Подберём подходящего педагога для каждого ученика
+                </p>
+                <div class="team">
+                    <div class="tutor">
+                        <div class="tutor__img">
+                            <img src="img/team/Ellipse 11.png" alt="Имя Фамилия">
+                        </div>
+                        <h4 class="tutor__name title-3">Имя Фамилия</h4>
+                        <h5 class="tutor__title body-1">Магистр иностранной филологии</h5>
+                    </div>
+                    <div class="tutor">
+                        <div class="tutor__img">
+                            <img src="img/team/Ellipse 11-1.png" alt="Имя Фамилия">
+                        </div>
+                        <h4 class="tutor__name title-3">Имя Фамилия</h4>
+                        <h5 class="tutor__title body-1">Магистр филологии</h5>
+                    </div>
+                    <div class="tutor">
+                        <div class="tutor__img">
+                            <img src="img/team/Ellipse 11-2.png" alt="Имя Фамилия">
+                        </div>
+                        <h4 class="tutor__name title-3">Имя Фамилия</h4>
+                        <h5 class="tutor__title body-1">Лингвист переводчик</h5>
+                    </div>
+                    <div class="tutor">
+                        <div class="tutor__img">
+                            <img src="img/team/Ellipse 11-3.png" alt="Имя Фамилия">
+                        </div>
+                        <h4 class="tutor__name title-3">Имя Фамилия</h4>
+                        <h5 class="tutor__title body-1">Магистр иностранной филологии</h5>
+                    </div>
+                </div>
+            </section>
+            <section class="section certificates">
+    <div class="section__header container">
+        <h2 class="section__title title-1">Сертификаты</h2>
+    </div>
+    <div class="certificates__inner container">
+        <div class="certificate">
+            <img src="img/certificates/Dark.png" alt="Сертификат 1">
+        </div>
+        <div class="certificate">
+            <img src="img/certificates/Dark-1.png" alt="Сертификат 2">
+        </div>
+        <div class="certificate">
+            <img src="img/certificates/Dark-2.png" alt="Сертификат 3">
+        </div>
+        <div class="certificate">
+            <img src="img/certificates/Dark-3.png" alt="Сертификат 4">
+        </div>
+    </div>
+            </section>
+            <section class="section form-section">
+            <div class="section__header container">
+            <h2 class="section__title title-1">Запишитесь на бесплатный урок</h2>
+            <p class="section__text body-1">Заполните форму ниже для прохождения 1-го бесплатного урока. Администратор свяжется с вами для согласования времени.</p>
+    </div>
+    <form class="form container">
+        <div class="form__inputs">
+            <input class="input body-1" type="text" placeholder="Ваше имя" required>
+            <input class="input body-1" type="tel" placeholder="Ваш телефон" required>
+            <input class="input body-1" type="email" placeholder="Электронная почта" required>
+            <button class="form__btn btn body-1">Оставить заявку</button>
+        </div>
+        <p class="form__caption body-2">Оставляя заявку, вы соглашаетесь на <a href="">обработку персональных данных</a> <br>и с <a href="">условиями бронирования счёта</a></p>
+    </form>
+            </section>
+            <section class="section container reviews">
+                <div class="reviews__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__img">
+                                    <img src="img/review_avatar.png" alt="Александра Селезнева">
+                                </div>
+                                <p class="review__text title-3">
+                                    Работа с сервисом приносит радость, потому что высочайший профессионализм, удобство, оперативность, и просто приятные люди!
+                                </p>
+                                <div class="review__author">
+                                    <p class="review__author-name body-1">Александра Селезнева</p>
+                                    <p class="review__author-title">фотограф</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__img">
+                                    <img src="img/review_avatar.png" alt="Александра Селезнева">
+                                </div>
+                                <p class="review__text title-3">
+                                    Работа с сервисом приносит радость, потому что высочайший профессионализм, удобство, оперативность, и просто приятные люди!
+                                </p>
+                                <div class="review__author">
+                                    <p class="review__author-name body-1">Александра Селезнева</p>
+                                    <p class="review__author-title">фотограф</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__pagination"></div>
+                <div class="reviews__buttons">
+                    <button class="reviews__button reviews__button_prev">
+                        <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.8452 20.5L23.2432 11.169L21.7566 9.83105L12.1545 20.5L21.7566 31.169L23.2432 29.8311L14.8452 20.5Z" fill="#FE002D"/>
+                        </svg>                
+                    </button>
+                    <button class="reviews__button reviews__button_next">
+                        <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1548 20.5L16.7568 11.169L18.2434 9.83105L27.8455 20.5L18.2434 31.169L16.7568 29.8311L25.1548 20.5Z" fill="#FE002D"/>
+                        </svg>                
+                    </button>
+                </div>
+            </section>
+            <script type="module">
+                import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+            
+                const swiper = new Swiper('.reviews__slider', {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    speed: 1000,
+            
+                    pagination: {
+                        clickable: true,
+                        el: ".reviews__pagination",
+                    },
+            
+                    navigation: {
+                        prevEl: ".reviews__button_prev",
+                        nextEl: ".reviews__button_next"
+                    }
+                })
+            </script>
+            <section class="section media">
+                <div class="media__inner container">
+                    <div class="media__item">
+                        <video controls poster="img/media/Media/08/image.png">
+                            <source src="https://filmsupply-public.s3.amazonaws.com/site-assets/curated-collections/previews/high-res/Whats-New-November-2024.webm">
+                        </video>
+                    </div>
+                    <div class="media__item">
+                        <video controls poster="img/media/Media/08/image-1.png">
+                            <source src="https://filmsupply-public.s3.amazonaws.com/site-assets/curated-collections/previews/high-res/Whats-New-November-2024.webm">
+                        </video>
+                    </div>
+                </div>
+            </section>
+            <script>
+    $(".media__item video").on("play", function(event) {
+        $(this).parent().addClass("playing")
+    })
+    $(".media__item video").on("pause", function(event) {
+        $(this).parent().removeClass("playing")
+    })
+            </script>
+            <section class="section about">
+                <div class="about__inner container">
+                    <h2 class="about__title title-1">Курсы английского языка онлайн</h2>
+                    <div class="about__text body-1">
+                        <p>Ваш надежный помощник в покорении английской лексики и грамматики! Если Вы уже давно и долго пытаетесь справиться с английским, но Ваши попытки так и не увенчались успехом – тогда наши курсы ангдийского языка онлайн именно то, что Вам нужно!</p>
+                        <p>
+                            Если Вы современный молодой человек или девушка, ученик школы, студент университета, домохозяйка или бизнесмен – то Вы безусловно знаете, как важна каждая минута и стараетесь экономить свое время. Наша школа придет в этом Вам на помощь! Курсы английского языка онлайн эффективные в любое время в любом месте. Вы можете заниматься дома, на работе, в командировке или отпуске. Вам нужно всего лишь интернет и устройство: компьютер, планшет или даже телефон.
+                        </p>
+                        <p>Весь учебный материал у нас электронный, который можно загрузить хоть на все устройства, а при желании еще и распечатать.</p>
+                    </div>
+                    <a href="" class="btn about__btn body-1">Подробнее</a>
+                </div>
+            </section>
+         </main>
+        <footer class="footer container">
+            <div class="footer__socials">
+                <a href="" class="footer__social">
+                    <img src="img/footer/Footer/Social/Social Button/24/Facebook.svg" alt="Facebook">
+                </a>
+                <a href="" class="footer__social">
+                    <img src="img/footer/Footer/Social/Social Button/24/Instagram.svg" alt="Instagram">
+                </a>
+                <a href="" class="footer__social">
+                    <img src="img/footer/Footer/Social/Social Button/24/Twitter.svg" alt="Twitter">
+                </a>
+                <a href="" class="footer__social">
+                    <img src="img/footer/Footer/Social/Social Button/24/VK.svg" alt="VK">
+                </a>
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__menu body-1">
+                    <li class="footer__link">
+                        <a href="">О компании</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="">Новости</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="">Помощь</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__copy body-2">
+                © 2020 Английский язык
+            </div>
+        </footer>
+    </body>
+</html>
